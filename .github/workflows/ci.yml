@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install (CPU torch)
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -e ".[dev]"
+      - name: Lint
+        run: ruff check .
+      - name: Tests (fixture splits; legacy checkpoints are not in git)
+        run: pytest -q -rs -m "not slow and not needs_checkpoints"
+
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install (CPU torch)
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -e .
+      - name: Fixture splits as data/ (the real splits are rebuilt by scripts/prepare_data.py)
+        run: for s in train val test; do cp tests/fixtures/mini_$s.csv data/$s.csv; done
+      - name: Train 1 epoch (vanilla + attention, Transformer)
+        run: |
+          python -m darija_nmt.train --model vanilla --attn --epochs 1 --limit_train 200 --tag smoke --runs_dir smoke_ckpt --results smoke.jsonl
+          python -m darija_nmt.train --model transformer --epochs 1 --limit_train 200 --tag smoke --lr 5e-4 --dropout 0.3 --runs_dir smoke_ckpt --results smoke.jsonl
+      - name: Evaluate + translate
+        run: |
+          python -m darija_nmt.evaluate --runs vanilla_smoke_s0 transformer_smoke_s0 --runs_dir smoke_ckpt --limit 20 --show 1 --out_dir smoke_out
+          python -m darija_nmt.translate "where are you?" --run vanilla_smoke_s0 --runs_dir smoke_ckpt
+          echo "how are you?" | python -m darija_nmt.translate --run transformer_smoke_s0 --runs_dir smoke_ckpt --beam 2

@@ -1,0 +1,9 @@
+{
+ "tok_val_chrf": {
+  "data": 24.608602377639265,
+  "data/tok_plus3k": 24.728478838382028,
+  "data/tok_plus6k": 25.272262711429082,
+  "data/tok_plus10k": 24.553304442409267
+ },
+ "tok": "data/tok_plus6k"
+}

@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "darija-nmt"
+version = "1.0.0"
+description = "English -> Moroccan Darija (Arabizi) seq2seq with hand-written LSTM cells (vanilla, CIFG, LSTMP, WMC)"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Mohamed Nacir" }]
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.28",
+    "torch>=2.2",
+    "sentencepiece>=0.2",
+    "sacrebleu>=2.4",
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "pyarrow>=14",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+docs = ["reportlab>=4.0", "python-pptx>=0.6.21", "pypdf>=4.0"]
+app = ["gradio>=5.0"]
+hub = ["huggingface_hub>=0.20"]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.urls]
+Repository = "https://github.com/Naciir"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: long-running test",
+    "needs_checkpoints: needs legacy/checkpoints/*.pt and legacy/outputs/ (not in git; skipped when missing)",
+    "needs_data: needs the full data/{train,val,test}.csv splits (not in git; skipped when only the fixtures are there)",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["notebooks", "legacy"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+# the research code is deliberately dense: several imports / statements per line, short lambdas, `l` for lines
+ignore = ["E401", "E701", "E702", "E731", "E741"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E402"]
+"app/*" = ["E402"]

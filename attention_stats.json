@@ -1,0 +1,317 @@
+{
+ "vanilla_attn_s0": {
+  "max_weight": 0.6545202104690951,
+  "entropy": 0.40176524471889824,
+  "enc_norm": 6.373887621561686
+ },
+ "lstmp_attn_s0": {
+  "max_weight": 0.9461547689619669,
+  "entropy": 0.06572610456657395,
+  "enc_norm": 8.54800710360209
+ },
+ "lstmp_attn_scaled_s0": {
+  "max_weight": 0.3405271918559947,
+  "entropy": 0.8113485135974112,
+  "enc_norm": 10.46785497188568
+ },
+ "vanilla_attn_scaled_s0": {
+  "max_weight": 0.24129380988843233,
+  "entropy": 0.909351031039525,
+  "enc_norm": 7.864037189483643
+ },
+ "cifg_attn_additive_s0": {
+  "max_weight": 0.4446035440640427,
+  "entropy": 0.6526562738431674,
+  "enc_norm": 6.850956171353658
+ },
+ "cifg_attn_additive_s1": {
+  "max_weight": 0.4400763339041187,
+  "entropy": 0.6554965837477232,
+  "enc_norm": 6.751611361503601
+ },
+ "cifg_attn_additive_s2": {
+  "max_weight": 0.446268608592664,
+  "entropy": 0.6466085328523211,
+  "enc_norm": 6.8959870449701945
+ },
+ "cifg_attn_general_s0": {
+  "max_weight": 0.6759499890870064,
+  "entropy": 0.3735945716126731,
+  "enc_norm": 5.758491730690002
+ },
+ "cifg_attn_general_s1": {
+  "max_weight": 0.6706877433901735,
+  "entropy": 0.38020585603032653,
+  "enc_norm": 5.575972015062968
+ },
+ "cifg_attn_general_s2": {
+  "max_weight": 0.6860451284065491,
+  "entropy": 0.3607710996423926,
+  "enc_norm": 5.671605478922526
+ },
+ "cifg_attn_s0": {
+  "max_weight": 0.6195914592557504,
+  "entropy": 0.45334097382990063,
+  "enc_norm": 5.845698362986247
+ },
+ "cifg_attn_s1": {
+  "max_weight": 0.6135773513907072,
+  "entropy": 0.4550684670878555,
+  "enc_norm": 5.750366264979045
+ },
+ "cifg_attn_s2": {
+  "max_weight": 0.6153056752027682,
+  "entropy": 0.45672618077516575,
+  "enc_norm": 5.807949743270874
+ },
+ "cifg_c42_s0": {
+  "max_weight": 0.4528375656938501,
+  "entropy": 0.66953935414504,
+  "enc_norm": 5.530296093622844
+ },
+ "lstmp_attn_additive_s0": {
+  "max_weight": 0.3901332887119259,
+  "entropy": 0.7343325487892948,
+  "enc_norm": 9.386693751017253
+ },
+ "lstmp_attn_additive_s1": {
+  "max_weight": 0.4025717537478912,
+  "entropy": 0.7293278606591899,
+  "enc_norm": 9.101117599805196
+ },
+ "lstmp_attn_additive_s2": {
+  "max_weight": 0.37967885804638474,
+  "entropy": 0.7529795711723047,
+  "enc_norm": 9.17512173016866
+ },
+ "lstmp_attn_general_s0": {
+  "max_weight": 0.9959735362671704,
+  "entropy": 0.004919548963152324,
+  "enc_norm": 8.678192774454752
+ },
+ "lstmp_attn_general_s1": {
+  "max_weight": 0.9867284746489225,
+  "entropy": 0.015479663945113853,
+  "enc_norm": 7.744636985460917
+ },
+ "lstmp_attn_general_s2": {
+  "max_weight": 0.6873196982824411,
+  "entropy": 0.352088038228242,
+  "enc_norm": 6.467998067537944
+ },
+ "lstmp_attn_s1": {
+  "max_weight": 0.9150067825584849,
+  "entropy": 0.10060222165768241,
+  "enc_norm": 7.756376875241598
+ },
+ "lstmp_attn_s2": {
+  "max_weight": 0.9547454647336397,
+  "entropy": 0.05561918071743863,
+  "enc_norm": 8.207092294692993
+ },
+ "lstmp_attn_scaled_s1": {
+  "max_weight": 0.3602140454559717,
+  "entropy": 0.7773297606344514,
+  "enc_norm": 10.493017598787944
+ },
+ "lstmp_attn_scaled_s2": {
+  "max_weight": 0.38004639506000676,
+  "entropy": 0.7541345541629426,
+  "enc_norm": 10.756132917404175
+ },
+ "lstmp_c42_s0": {
+  "max_weight": 0.4082037792021089,
+  "entropy": 0.7374928371886524,
+  "enc_norm": 7.421283137003581
+ },
+ "vanilla_attn_additive_s0": {
+  "max_weight": 0.442719555058615,
+  "entropy": 0.658732592974448,
+  "enc_norm": 7.21352676709493
+ },
+ "vanilla_attn_additive_s1": {
+  "max_weight": 0.4593457398185687,
+  "entropy": 0.659994523246287,
+  "enc_norm": 6.910131541887919
+ },
+ "vanilla_attn_additive_s2": {
+  "max_weight": 0.47263897672531546,
+  "entropy": 0.6201787153677097,
+  "enc_norm": 7.0173968410491945
+ },
+ "vanilla_attn_general_s0": {
+  "max_weight": 0.7224700407770286,
+  "entropy": 0.31166230047766863,
+  "enc_norm": 6.444948879877726
+ },
+ "vanilla_attn_general_s1": {
+  "max_weight": 0.7337312366936756,
+  "entropy": 0.2988078218048817,
+  "enc_norm": 6.023754413922628
+ },
+ "vanilla_attn_general_s2": {
+  "max_weight": 0.7138689728218721,
+  "entropy": 0.32247589361594714,
+  "enc_norm": 5.958553719520569
+ },
+ "vanilla_attn_plus_s0": {
+  "max_weight": 0.5360413440846138,
+  "entropy": 0.5720144273092119,
+  "enc_norm": 4.585289010206858
+ },
+ "vanilla_attn_s1": {
+  "max_weight": 0.639719488073541,
+  "entropy": 0.42188157495379,
+  "enc_norm": 6.2121915499369305
+ },
+ "vanilla_attn_s2": {
+  "max_weight": 0.6370910985959638,
+  "entropy": 0.41898824437734805,
+  "enc_norm": 6.298317297299703
+ },
+ "vanilla_attn_scaled_s1": {
+  "max_weight": 0.2510618358250554,
+  "entropy": 0.901181350810201,
+  "enc_norm": 7.754908418655395
+ },
+ "vanilla_attn_scaled_s2": {
+  "max_weight": 0.24468485925014422,
+  "entropy": 0.9067017908332644,
+  "enc_norm": 7.786001205444336
+ },
+ "vanilla_c42_s0": {
+  "max_weight": 0.4569054405132783,
+  "entropy": 0.6641195984247976,
+  "enc_norm": 5.765696444511414
+ },
+ "vanilla_hp_adamw_s0": {
+  "max_weight": 0.6477056826983899,
+  "entropy": 0.40926010842441013,
+  "enc_norm": 6.384393733342488
+ },
+ "vanilla_hp_base_s0": {
+  "max_weight": 0.6529309300969728,
+  "entropy": 0.4032227593762382,
+  "enc_norm": 6.411464071273803
+ },
+ "vanilla_hp_base_s1": {
+  "max_weight": 0.6382310545697749,
+  "entropy": 0.4220079447614784,
+  "enc_norm": 6.269226619402567
+ },
+ "vanilla_hp_base_s2": {
+  "max_weight": 0.6441719395498118,
+  "entropy": 0.41512094802215993,
+  "enc_norm": 6.2153678274154665
+ },
+ "vanilla_hp_bs128_s0": {
+  "max_weight": 0.659427876537134,
+  "entropy": 0.39472689055507193,
+  "enc_norm": 6.78914584159851
+ },
+ "vanilla_hp_bs32_s0": {
+  "max_weight": 0.6364947137613045,
+  "entropy": 0.4267282461275243,
+  "enc_norm": 5.767464067141215
+ },
+ "vanilla_hp_do0.2_s0": {
+  "max_weight": 0.6601250338188286,
+  "entropy": 0.3996008154440613,
+  "enc_norm": 6.861993254025777
+ },
+ "vanilla_hp_do0.5_s0": {
+  "max_weight": 0.6357334895304783,
+  "entropy": 0.42517225578395285,
+  "enc_norm": 6.012422496477763
+ },
+ "vanilla_hp_lr3e-3_s0": {
+  "max_weight": 0.474797693894388,
+  "entropy": 0.632901327701422,
+  "enc_norm": 4.138155506451924
+ },
+ "vanilla_hp_lr3e-4_s0": {
+  "max_weight": 0.665765023621998,
+  "entropy": 0.3872173649351842,
+  "enc_norm": 8.285693182945252
+ },
+ "vanilla_hp_orthogonal_s0": {
+  "max_weight": 0.6515904194436585,
+  "entropy": 0.4125671039182168,
+  "enc_norm": 6.46029747804006
+ },
+ "vanilla_hp_rmsprop_s0": {
+  "max_weight": 0.6295677608598961,
+  "entropy": 0.4267586416196925,
+  "enc_norm": 6.110097592671712
+ },
+ "vanilla_hp_sgd_s0": {
+  "max_weight": 0.5642013169384853,
+  "entropy": 0.5109796373122147,
+  "enc_norm": 6.2951311715443925
+ },
+ "vanilla_hp_xavier_s0": {
+  "max_weight": 0.6533753466595329,
+  "entropy": 0.4025551294309327,
+  "enc_norm": 6.43275183836619
+ },
+ "vanilla_tokp10k_s0": {
+  "max_weight": 0.5922985363335336,
+  "entropy": 0.5045660136084613,
+  "enc_norm": 5.015578907330831
+ },
+ "vanilla_tokp3k_s0": {
+  "max_weight": 0.535586628771188,
+  "entropy": 0.5618381253896692,
+  "enc_norm": 4.59570681810379
+ },
+ "vanilla_tokp6k_s0": {
+  "max_weight": 0.5669718210917796,
+  "entropy": 0.5249384208358974,
+  "enc_norm": 4.7758060598373415
+ },
+ "wmc_attn_additive_s0": {
+  "max_weight": 0.4773024789745284,
+  "entropy": 0.6099363192828877,
+  "enc_norm": 7.197221091588339
+ },
+ "wmc_attn_additive_s1": {
+  "max_weight": 0.4745505567290775,
+  "entropy": 0.6142037911351556,
+  "enc_norm": 7.089818754196167
+ },
+ "wmc_attn_additive_s2": {
+  "max_weight": 0.47920404961460256,
+  "entropy": 0.633649711273157,
+  "enc_norm": 6.973553277651469
+ },
+ "wmc_attn_general_s0": {
+  "max_weight": 0.9967938583851249,
+  "entropy": 0.004923824639570758,
+  "enc_norm": 7.0956473684310915
+ },
+ "wmc_attn_general_s1": {
+  "max_weight": 0.717438992389373,
+  "entropy": 0.313997131816408,
+  "enc_norm": 6.243312044143677
+ },
+ "wmc_attn_general_s2": {
+  "max_weight": 0.7324176567417028,
+  "entropy": 0.29863582325663124,
+  "enc_norm": 6.219497521718343
+ },
+ "wmc_attn_s0": {
+  "max_weight": 0.6509853966126216,
+  "entropy": 0.4050243792767519,
+  "enc_norm": 6.628025647799174
+ },
+ "wmc_attn_s1": {
+  "max_weight": 0.6369022788950142,
+  "entropy": 0.4166659433652304,
+  "enc_norm": 6.373972721099854
+ },
+ "wmc_attn_s2": {
+  "max_weight": 0.6195604595646683,
+  "entropy": 0.44188648412190434,
+  "enc_norm": 6.360392516454061
+ }
+}

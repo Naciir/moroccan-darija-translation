@@ -1,0 +1,70 @@
+# Python / tooling
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.lock
+
+# Local machine files and credentials
+.DS_Store
+Thumbs.db
+desktop.ini
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+credentials.json
+secrets/
+
+# Logs and model artifacts
+*.log
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+
+# Local agent handoff notes and team coursework are not part of the public portfolio
+/AGENTS.md
+/CLAUDE.md
+docs/coursework/
+
+# data: only the SentencePiece models are versioned. The splits and the extra corpora are rebuilt from Hugging Face
+# (scripts/prepare_data.py, scripts/build_extra_data.py, scripts/fetch_mono_darija.py) and are not redistributed here.
+data/*.csv
+data/*.txt
+data/*.png
+data/extra/
+data/tok_mono/
+
+# run configs/summaries (checkpoints/*.json) are small and kept
+sweep_ckpt/
+smoke_ckpt/
+smoke_out/
+smoke*.jsonl
+sweep_results.jsonl
+logs/
+legacy/checkpoints/
+legacy/outputs/
+human_eval/
+
+# decoded test sets: keep only the greedy hypotheses that analyze.py / extras.py read (paired bootstrap, diagnostics)
+outputs/*
+!outputs/*_test_beam1.txt
+!outputs/baseline_*_test.txt
+!outputs/*.png
+!outputs/legacy/
+outputs/legacy/*
+!outputs/legacy/*_test_beam1.txt
+
+# scheduler log (decisions are kept in night_decisions.json)
+night.log
+checkpoints/MTIMES.json

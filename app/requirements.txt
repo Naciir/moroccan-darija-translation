@@ -1,0 +1,11 @@
+# Hugging Face Space (Gradio SDK): app.py + the darija_nmt package copied next to it (src/darija_nmt -> ./darija_nmt);
+# set DARIJA_NMT_HUB_REPO (and optionally DARIJA_NMT_RUN) in the Space settings to load the weights from the Hub.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.2
+sentencepiece>=0.2
+sacrebleu>=2.4
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+huggingface_hub>=0.20
+gradio>=5.0
